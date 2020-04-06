@@ -4,9 +4,8 @@ WORKDIR /app
 
 RUN pip install pandas scikit-learn flask gunicorn
 
-ADD ./core ./core
-ADD ./models ./models
-ADD main.py main.py
+ADD ./model ./model
+ADD server.py server.py
 
 EXPOSE 5000
 
